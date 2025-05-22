@@ -114,7 +114,11 @@ class _SettingsPageState extends State<SettingsPage> {
                 context: context,
                 applicationName: 'SplitZilla',
                 applicationVersion: '1.0.0',
-                applicationIcon: const FlutterLogo(size: 48),
+                applicationIcon: Image.asset(
+                  'assets/images/logo_splitzilla.png',
+                  height: 48,
+                  width: 48,
+                ),
                 children: const [
                   Text(
                     'SplitZilla is a feature-rich expense tracker app that helps you manage your personal and group expenses.',

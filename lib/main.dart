@@ -85,11 +85,11 @@ class _HomePageState extends State<HomePage> {
       appBar: AppBar(
         title: Row(
           children: [
-            Image.asset(
-              'assets/images/logo_splitzilla.png',
-              height: 32,
-              width: 32,
-            ),
+            // Image.asset(
+            //   'assets/images/logo_splitzilla.png',
+            //   height: 32,
+            //   width: 32,
+            // ),
             const SizedBox(width: 8),
             const Text('SplitZilla'),
           ],
@@ -139,7 +139,11 @@ class _HomePageState extends State<HomePage> {
                   context: context,
                   applicationName: 'SplitZilla',
                   applicationVersion: '1.0.0',
-                  applicationIcon: const FlutterLogo(size: 48),
+                  applicationIcon: Image.asset(
+                    'assets/images/logo_splitzilla.png',
+                    height: 48,
+                    width: 48,
+                  ),
                   children: const [
                     Text(
                       'SplitZilla is a feature-rich expense tracker app that helps you manage your personal and group expenses.',
